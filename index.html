@@ -7,19 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => {
-        console.log('Service Worker registered:', registration);
-      })
-      .catch((error) => {
-        console.error('Service Worker registration failed:', error);
-      });
-  });
-}
-    </script>
     <header>
         <h1>Selamat Datang di Situs Desain Web</h1>
         <nav>
