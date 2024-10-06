@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Desain Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Kontak</h2>
+            <form id="contact-form" onsubmit="submitForm(); return false;">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="category">Kategori Pesan:</label>
+                <select id="category" name="category">
+                    <option value="pertanyaan">Pertanyaan</option>
+                    <option value="saran">Saran</option>
+                    <option value="masalah">Masalah</option>
+                </select><br><br>
+    
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+    
+                <div class="container">
+                    <p>Ingin menerima balasan?</p>
+                    <label for="ya">Ya</label>
+                    <input type="radio" id="ya" name="balasan">
+                    <label for="tidak">Tidak</label>
+                    <input type="radio" id="tidak" name="balasan">
+                </div>
+                
+    
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+    </main>
+    <script>
+        function submitForm() {
+            // Reset form fields
+            document.getElementById("contact-form").reset();
+            alert("Form berhasil dikirim!");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Desain Web. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
