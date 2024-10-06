@@ -2,13 +2,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #cad0ae;
+    background-color: #c4c6bb;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #1d7839;
+    background-color: #609570;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -57,13 +57,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #cad0ae;
+    color: #c4c6bb;
     text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    background-color: #1d7839;
+    background-color: #609570;
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -109,12 +109,12 @@ form input, form textarea, form select {
 }
 
 form input:focus, form textarea:focus, form select:focus {
-    border-color: #1d7839;
-    box-shadow: 0 0 5px rgba(29, 120, 57, 0.8);
+    border-color: #609570;
+    box-shadow: 0 0 5px #609570(29, 120, 57, 0.8);
 }
 
 form input[type="submit"] {
-    background-color: #1d7839;
+    background-color: #609570;
     color: white;
     border: none;
     padding: 15px;
@@ -131,6 +131,7 @@ form input[type="radio"] {
     margin-right: 10px;
 }
 
+/* Enhanced animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -198,7 +199,7 @@ form input[type="radio"] {
 }
 
 .button {
-    background-color: #1d7839;
+    background-color: #609570;
     color: white;
     border: none;
     padding: 15px;
@@ -210,4 +211,16 @@ form input[type="radio"] {
 
 .button:hover {
     background-color: #45a049;
+}
+
+.download-button {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
